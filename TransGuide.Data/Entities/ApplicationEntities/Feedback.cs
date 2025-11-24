@@ -21,7 +21,7 @@ namespace TransGuide.Data.Entities.ApplicationEtities
 
         public  int  RouteId { get; set; }
 
-		public int TripStatus { get; set; }
+		public int TripStatusId { get; set; }
 
         public TripStatus TripStatus { get; set; }
 

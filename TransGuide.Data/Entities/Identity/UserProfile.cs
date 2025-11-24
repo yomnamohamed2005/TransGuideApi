@@ -9,6 +9,8 @@ namespace TransGuide.Data.Entities.Identity
 {
 	public class UserProfile : IdentityUser<int>
 	{
+        public  decimal CurrentLongitude { get; set; }
 
-	}
+        public  decimal CurrentLatidude { get; set; }
+    }
 }

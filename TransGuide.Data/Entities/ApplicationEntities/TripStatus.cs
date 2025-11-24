@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace TransGuide.Data.Entities.ApplicationEtities
 {
-	internal class TripStatus
+	public class TripStatus
 	{
-	}
+        public  int  Id { get; set; }
+
+        public  string  Name { get; set; }
+    }
 }
