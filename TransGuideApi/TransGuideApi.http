@@ -1,0 +1,6 @@
+@TransGuideApi_HostAddress = http://localhost:5237
+
+GET {{TransGuideApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
