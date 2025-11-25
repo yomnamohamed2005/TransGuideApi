@@ -14,5 +14,7 @@ namespace TransGuide.Data.Entities.ApplicationEtities
         public  decimal Latidude  { get; set; }
 
         public  decimal  Longitude { get; set; }
+
+		public ICollection<Route> Routes { get; set; } = new HashSet<Route>();
     }
 }

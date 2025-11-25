@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TransGuide.Data.Entities.Identity;
 
 namespace TransGuide.Data.Entities.ApplicationEtities
 {
@@ -25,5 +26,9 @@ namespace TransGuide.Data.Entities.ApplicationEtities
         public  int  RouteStatusId { get; set; }
 
         public  RouteStatus Status { get; set; }
+
+        public ICollection<UserProfile> UserProfiles { get; set; } = new HashSet<UserProfile>();
+
+        public ICollection<Station> Stations { get; set; } = new HashSet<Station>();
     }
 }

@@ -15,7 +15,10 @@ namespace TransGuide.Data.Entities.ApplicationEtities
 
         public  DateTime DateTime  { get; set; }
 
-        public  int Rating  { get; set; }
+        public  int RatingId  { get; set; }
+
+
+		public Rating Rating  { get; set; }
 
         public  int  UserProfileId { get; set; }
 

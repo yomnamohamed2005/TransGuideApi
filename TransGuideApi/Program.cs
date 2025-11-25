@@ -1,4 +1,7 @@
 
+using Microsoft.EntityFrameworkCore;
+using TransGuide.Data;
+
 namespace TransGuideApi
 {
 	public class Program
@@ -12,6 +15,8 @@ namespace TransGuideApi
 			// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 			builder.Services.AddEndpointsApiExplorer();
 			builder.Services.AddSwaggerGen();
+			builder.Services.AddDbContext<TransGuideDbContext>(options =>
+	        options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 			var app = builder.Build();
 
