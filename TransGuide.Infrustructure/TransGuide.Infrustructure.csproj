@@ -13,7 +13,6 @@
   <ItemGroup>
     <Folder Include="data\" />
     <Folder Include="Configrations\" />
-    <Folder Include="Respositories\" />
   </ItemGroup>
 
 </Project>
