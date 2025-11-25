@@ -2,13 +2,13 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
-using TransGuide.Data.Entities.ApplicationEtities;
+using TransGuide.Data.Entities.ApplicationEntities;
 using TransGuide.Data.Entities.Identity;
 
 namespace TransGuide.Data
 {
 	public class TransGuideDbContext : IdentityDbContext<
-		UserProfile,                      // UserProfile بدل User
+		UserProfile,                      
 		IdentityRole<int>,
 		int,
 		IdentityUserClaim<int>,

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TransGuide.Data.Entities.Identity;
 
-namespace TransGuide.Data.Entities.ApplicationEtities
+namespace TransGuide.Data.Entities.ApplicationEntities
 {
 	public class Route
 	{

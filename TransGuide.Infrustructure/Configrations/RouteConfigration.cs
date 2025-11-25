@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using TransGuide.Data.Entities.ApplicationEtities;
+using TransGuide.Data.Entities.ApplicationEntities;
 
 namespace TransGuide.Infrastructure.Configurations
 {

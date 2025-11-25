@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TransGuide.Data.Entities.ApplicationEtities;
+using TransGuide.Data.Entities.ApplicationEntities;
 
 namespace TransGuide.Infrustructure.Configrations
 {

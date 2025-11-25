@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TransGuide.Data.Entities.ApplicationEtities
+namespace TransGuide.Data.Entities.ApplicationEntities
 {
 	public class RouteStatus
 	{

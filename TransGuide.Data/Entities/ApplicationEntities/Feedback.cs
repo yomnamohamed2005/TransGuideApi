@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TransGuide.Data.Entities.Identity;
 
-namespace TransGuide.Data.Entities.ApplicationEtities
+namespace TransGuide.Data.Entities.ApplicationEntities
 {
 	public  class Feedback
 	{
@@ -13,6 +13,7 @@ namespace TransGuide.Data.Entities.ApplicationEtities
 
         public  string  Comment  { get; set; }
 
+        // date 
         public  DateTime DateTime  { get; set; }
 
         public  int RatingId  { get; set; }
