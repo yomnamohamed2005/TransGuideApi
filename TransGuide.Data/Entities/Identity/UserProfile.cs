@@ -19,7 +19,7 @@ namespace TransGuide.Data.Entities.Identity
 
         public  decimal CurrentLongitude { get; set; }
 
-        public  decimal CurrentLatidude { get; set; }
+        public decimal CurrentLatitude { get; set; }
 
         public 	ICollection<Route> Route { get; set; } = new HashSet<Route>();
 	}

@@ -28,8 +28,23 @@ namespace TransGuide.Data
 		{
 			base.OnModelCreating(modelBuilder);
 
+            modelBuilder.Entity<Station>()
+                .Property(s => s.Latitude)     
+                .HasPrecision(10, 7);
 
-			modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+            modelBuilder.Entity<Station>()
+                .Property(s => s.Longitude)
+                .HasPrecision(11, 7);
+
+            // UserProfile
+            modelBuilder.Entity<UserProfile>()
+                .Property(u => u.CurrentLatitude)  
+                .HasPrecision(10, 7);
+
+            modelBuilder.Entity<UserProfile>()
+                .Property(u => u.CurrentLongitude)
+                .HasPrecision(11, 7);
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 		}
 
 		// DbSets

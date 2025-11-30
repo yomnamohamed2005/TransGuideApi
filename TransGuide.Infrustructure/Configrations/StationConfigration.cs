@@ -15,6 +15,13 @@ namespace TransGuide.Infrustructure.Configrations
 		{
 			builder.HasKey(s => s.Id);
 			builder.Property(s => s.Name).IsRequired().HasMaxLength(100);
-		}
+
+          
+            builder.Property(s => s.Latitude)
+                   .HasColumnType("decimal(10,7)"); 
+
+            builder.Property(s => s.Longitude)
+                   .HasColumnType("decimal(11,7)"); 
+        }
 	}
 }

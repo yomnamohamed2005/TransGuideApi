@@ -11,7 +11,7 @@ namespace TransGuide.Data.Entities.ApplicationEntities
 	{
         public int Id  { get; set; }
 
-        public  string  Comment  { get; set; }
+        public  string?  Comment  { get; set; }
 
         // date 
         public  DateTime DateTime  { get; set; }
